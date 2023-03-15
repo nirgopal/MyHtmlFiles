@@ -1,0 +1,226 @@
+body {
+    background-image: url(images/background2.jpg);
+    /* To fit the image to the screen */
+    background-size: cover;
+}
+
+header {
+    float: right;
+    font-size: 35px;
+
+}
+a{
+    color: #2E4372;
+}
+
+/* To remove the bullet points in front of the listing */
+
+li{
+    list-style: none;
+}
+
+.sectionBorder{
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+.boxBorder{
+    border: 5px solid black;
+    width: 85px
+}
+
+
+.colorExample{
+    background-color: rgb(0,0,255);
+    color: red;
+}
+.colorWithOpacityExample{
+    background-color: rgba(0,0,255,0.2);
+    
+}
+.textAlignExample{
+    text-align: right;
+}
+
+#idExample{
+    background-color: rgba(0,255,0,0.2);
+}
+
+span, h5{
+    background-color: rgba(225,255,0,0.2);
+}
+
+div h4 {
+    background-color: rgba(225,0,0,0.8);
+    text-align: center;
+}
+
+div > h4 {
+    background-color: rgba(225,255,0,0.8);
+    text-align: center;
+}
+
+p+h4 {
+    background-color:blue;
+   
+}
+
+h2:hover {
+    background-color:pink
+   
+}
+
+.textStyleExample{
+    line-height: 20px;
+    text-decoration: underline;
+    font-size: 100%;
+    font-family: "Sofia", sans-serif;
+    font-weight: 300;
+    text-shadow: 3px 3px 3px;
+}
+
+.imageFloatExample{
+    float: right;
+}
+.footerExample{
+    clear: both;
+    text-align: center;
+}
+
+.boxModelExample{
+    padding: 5px 10px;
+    margin: 2px 3px;
+    display: inline-block;
+    color: red;
+}
+
+.pxExample{
+    font-size: 10px;
+}
+
+p > span {
+    font-size: 3em;
+}
+.remExample{
+    font-size:5rem;
+}
+
+.flexboxExample{
+    display: flex;
+    padding: 5px 10px;
+    margin: 20px 3px;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap:10px;
+    flex-wrap: wrap;
+    clear: both;
+}
+.flexpostion{
+    align-items: flex-start;
+    
+}
+.flexboxitem{
+    width:300px;
+    height:400px;
+    text-align: center;
+    justify-content: center;
+    
+}
+.flexboxMultiItem{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width:200px
+}
+
+.flexinstruction{
+    align-items: flex-start;
+    width: 500px;
+}
+.flexitem{
+    align-self: flex-end;
+}
+
+.borderImageExample{
+    border: 10px solid transparent;
+    padding:10px;
+    border-image: url(images/borderImage.jpeg) 75 stretch;
+    width: 50%;
+}
+
+.boxShadowExample{
+    box-shadow: 10px 10px 5px 12px blue;
+    
+}
+
+.tooltipExample:hover .tooltiptext{
+    visibility: visible;
+    position: absolute;
+    
+}
+
+.tooltipExample .tooltiptext{
+    
+    visibility: hidden;
+    z-index: 1;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+
+.actionImage:hover .clickedImage{
+    visibility: visible;
+}
+
+.actionImage  .clickedImage{
+    visibility: hidden;
+}
+.actionImage .hovertooltip{
+    visibility: visible;
+    height: 20px;
+}
+.actionImage:hover .hovertooltip{
+    visibility: hidden;
+}
+
+.animationDiv{
+    width: 100px;
+    height: 200px;
+    animation-name: arrow;
+    animation-duration: 3s;
+    background-color: aqua;
+}
+
+@keyframes arrow {
+   from{left:0px;}
+    to{left: 300px;}
+}
+
+.arrowImage{
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    transition: width 3s;
+    align-self: end;
+}
+.arrowImage:hover{
+    width:200px;
+}
+
+.flexnowrap{
+    flex-wrap: nowrap;
+}
+/* .arrowImageTransition{
+    transition-timing-function: linear;
+} */
+
+.flexDirection{
+    flex-direction: row;
+}
+
+.iamgeFlexMultiItem{
+   align-self: flex-end;
+}
+

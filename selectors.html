@@ -1,0 +1,103 @@
+<html>
+    <title>Css selectors</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <body>
+        <a href="index.html">
+            
+            <h3>
+            
+              Go back to Main page
+            
+            </h3>
+            </a>
+        <p 
+          
+          class="colorWithOpacityExample"> Example of using a class selector
+          <br>       
+          .colorWithOpacityExample
+        </p>
+        <p 
+          
+        id="idExample"> Example of using a id selector
+        <br>       
+        #idExample
+      </p>
+         
+      <div class="colorWithOpacityExample textAlignExample">
+        <span>to apply two different selectors  use class="colorWithOpacityExample textAlignExample"</span>
+        <br>
+        <span>Content in the span</span>
+        <h5>Content in h5</h5>
+      </div>
+
+      <div class="sectionBorder">
+        <span> To apply style to 2 specific elements use "span,h5 {background-color: rgba(225,255,0,0.2)}"</span>
+        <br>
+        <span>Content in the span</span>
+        <h5>Content in h5</h5>
+      </div>
+
+      <div class="sectionBorder">
+        <span> To apply style to an element inside another element use "div h4 {background-color: rgba(225,0,0.8)}"</span>
+        <br>
+        <p>Content in the paragraph</p>
+        <span>
+        <h4>Content in h4</h4>
+        </span>
+        
+      </div>
+
+      <div class="sectionBorder">
+        <span> To apply style to an element which is the direct child "div>h4 { background-color: rgba(225,255,0,0.8)}"</span>
+        <br>             
+        <h4>Content in h4</h4>      
+        
+      </div>
+
+
+      <div class="sectionBorder">
+        <span> To apply style to an element right after the element "p+h4 {background-color: rgba(225,0,0.8)}"</span>
+        <br>
+        <p>Content in the paragraph</p>        
+        <h4>Content in h4</h4>      
+        
+      </div>
+
+      <div class="sectionBorder">
+        <span> to apply style on hover , use h2:hover {background-color: pink}"</span>
+        <br>
+        <p>Hover over the h4 to see the style</p>        
+        <h2>Content in h4</h2>      
+        
+      </div>
+      <div class="sectionBorder">
+        <img class="imageFloatExample" src = "background.jpg" width="70px" height="80px">
+      <p class="textStyleExample">
+        Applied text styling for the below text and added an image
+        <br>
+        
+        Used a downloaded google font, added 
+      line-height: 20px;
+      text-decoration: underline;
+      font-size: 100%;
+      font-family: "Sofia", sans-serif;
+      font-weight: 300;
+      text-shadow: 3px 3px 3px;
+      </p>
+      <footer class="footerExample">This is a footer used after float attribute used for the img. When using float, need to used clear:both for next element to start fresh</footer>
+      
+    </div>
+    
+    <p class="sectionBorder boxModelExample">This is a box model example</p>
+    <p class="sectionBorder boxModelExample">Using the following styles</p>
+    <p class="sectionBorder boxModelExample">padding: 5px 10px;
+      margin: 2px 3px;
+      display: inline-block;</p>
+    <p class="sectionBorder boxModelExample">Specify only 2 values for padding or margin means R and L the same px and L and R the same px</p>
+    
+      <p class="pxExample"><span class="emExample">The font size of the span element is set to 3em with its parent having 10px hence the font-size of the span is 3*10 = 30px</span>, <span class="remExample">While this span is set to rem with size , rem times the font-size of the root element</span>. Fuga expedita id minima illo illum necessitatibus iste architecto laboriosam officiis ipsa, nobis facilis dolor earum nihil tenetur aut incidunt animi reiciendis.
+      </p>
+   </body>
+     
+</html>
